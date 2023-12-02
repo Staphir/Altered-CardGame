@@ -9,6 +9,7 @@ var adventure_cards = [
 	preload("res://Assets/Sprites/BoardGame/adventure_card_3.png")
 ]
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$hero_card/CardSprite.texture = hero_card
@@ -27,8 +28,9 @@ func _ready():
 	$adventure_card_3/CardSprite.texture = adventure_cards[2]
 	if randf() > 0.5:
 		$adventure_card_3.rotate(PI)
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass

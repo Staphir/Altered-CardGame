@@ -1,14 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://cp6wuud8td67p"]
+[gd_scene load_steps=5 format=3 uid="uid://cp6wuud8td67p"]
 
+[ext_resource type="Script" path="res://Scripts/player_board_manager.gd" id="1_y1w5e"]
 [ext_resource type="Texture2D" uid="uid://cspmjx8vwq2l8" path="res://Assets/Sprites/BoardGame/asset_footer.png" id="1_y5qa4"]
+[ext_resource type="PackedScene" uid="uid://b5h5rdo8i4e3a" path="res://Scenes/deck.tscn" id="3_6n8nl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h1nvb"]
 size = Vector2(1440, 832)
 
-[node name="PlayerBoard" type="Area2D"]
+[node name="PlayerBoard" type="Node2D"]
+script = ExtResource("1_y1w5e")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="PlayerBoardArea" type="Area2D" parent="."]
+scale = Vector2(0.6, 0.6)
+
+[node name="Sprite2D" type="Sprite2D" parent="PlayerBoardArea"]
 texture = ExtResource("1_y5qa4")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerBoardArea"]
 shape = SubResource("RectangleShape2D_h1nvb")
+
+[node name="Player_deck" parent="." instance=ExtResource("3_6n8nl")]

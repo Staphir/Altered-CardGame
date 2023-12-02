@@ -11,58 +11,37 @@ script = ExtResource("1_3g0o1")
 position = Vector2(584, 544)
 rotation = -1.5708
 scale = Vector2(0.3, 0.3)
+script = null
 
 [node name="companion_card" parent="." instance=ExtResource("1_3d14m")]
 position = Vector2(1416, 544)
 rotation = 1.5708
 scale = Vector2(0.3, 0.3)
+script = null
 
 [node name="adventure_card_1" parent="." instance=ExtResource("1_3d14m")]
 position = Vector2(792, 544)
 rotation = 1.5708
 scale = Vector2(0.3, 0.3)
+script = null
 
 [node name="adventure_card_2" parent="." instance=ExtResource("1_3d14m")]
 position = Vector2(1000, 544)
 rotation = 1.5708
 scale = Vector2(0.3, 0.3)
+script = null
 
 [node name="adventure_card_3" parent="." instance=ExtResource("1_3d14m")]
 position = Vector2(1208, 544)
 rotation = 1.5708
 scale = Vector2(0.3, 0.3)
+script = null
 
 [node name="PlayerBoard" parent="." instance=ExtResource("3_ny66l")]
 z_index = -1
 position = Vector2(1000, 869)
-scale = Vector2(0.6, 0.6)
 
 [node name="PlayerBoard2" parent="." instance=ExtResource("3_ny66l")]
 z_index = -1
 position = Vector2(1000, 220)
 rotation = 3.14159
-scale = Vector2(0.6, 0.6)
-
-[node name="Card" parent="." instance=ExtResource("1_3d14m")]
-position = Vector2(256, 1000)
-scale = Vector2(0.2, 0.2)
-
-[node name="Card2" parent="." instance=ExtResource("1_3d14m")]
-position = Vector2(256, 848)
-scale = Vector2(0.2, 0.2)
-
-[node name="Card3" parent="." instance=ExtResource("1_3d14m")]
-position = Vector2(256, 696)
-scale = Vector2(0.2, 0.2)
-
-[node name="Card4" parent="." instance=ExtResource("1_3d14m")]
-position = Vector2(256, 80.0001)
-scale = Vector2(0.2, 0.2)
-
-[node name="Card5" parent="." instance=ExtResource("1_3d14m")]
-position = Vector2(256, 232)
-scale = Vector2(0.2, 0.2)
-
-[node name="Card6" parent="." instance=ExtResource("1_3d14m")]
-position = Vector2(256, 384)
-scale = Vector2(0.2, 0.2)

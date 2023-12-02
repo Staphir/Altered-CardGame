@@ -1,12 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://dw12e2yw87frv"]
+[gd_scene load_steps=3 format=3 uid="uid://dw12e2yw87frv"]
+
+[ext_resource type="Script" path="res://Scripts/card_manager.gd" id="1_itv3n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7jvy0"]
 size = Vector2(499, 699)
 
-[node name="Card" type="Area2D"]
+[node name="CardArea" type="Area2D"]
+script = ExtResource("1_itv3n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_7jvy0")
 
 [node name="CardSprite" type="Sprite2D" parent="."]
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
